@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 960px;
+    padding: 50px 0;
+}
+    /* header area */
+.header-area{
+    background-color: #2D25A0;
+    display: flex;
+    justify-content: center;
+}
+/* menu */
+.main-menu {
+    display: flex;
+    justify-content: space-between;
+}    
+.main-menu span a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 20px;
+    font-size: 16px;
+}
+.main-menu span a:hover{
+    color:darkgray ;
+}
+.main-menu #login-button{
+    padding: 10px 20px;
+    background-color: #E02C6D;
+    border-radius: 5px;
+}
+.main-menu #login-button i{
+    margin-right:10px;
+}
+.banner-area img{
+    width: 556px;   
+    height: 438px;   
+}
+.live-watch-wraper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.live-watch-heading{
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+}
+.live-watch-area .watch-link{
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #E02C6D;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    transition: transform 0.5s ease-in-out
+    ;
+}
+.live-watch-area .watch-link:hover{
+    transform: scale(1.3,1.3);
+    background-color: transparent;
+    border: 1px solid #fff;
+    font-size: 16px;
+}
+
+
+/* player bio css */
+main{
+    display: flex;
+    justify-content: center;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+.players-bio{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.players-bio .player-profile-photo img{
+   width:300px;
+}
+.players-bio .player-name{
+    font-size: 20px;
+}
+.players-bio .player-bio-data{
+    font-size: 13px;
+}
+
+/* highlights-streaming-area */
+.highlights-streaming-area{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 100px 0;
+}
+.highlight-title{
+    font-size: 40px;
+    font-weight: bold;
+}
+.highlights-streaming-area .watch-link{
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #E02C6D;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.5s ease-in-out
+}
+.highlights-streaming-area .watch-link:hover{
+    transform: scale(1.3,1.3);
+    background-color: transparent;
+    border: 2px solid #E02C6D;
+    font-size: 16px;
+    color: #E02C6D;
+}
+.highligth-banner{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.highligth-banner img{
+    width: 500px;
+    border-radius: 10px;
+}
+
+/* vision area extra */
+.vision-area{
+    display: flex;
+    justify-content: center;
+    background-image: url(images/cover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px 0;
+}
+.vision-area .session h3{
+    color: #fff;
+    font-size: 2em;
+    line-height: 100px;
+}
+.vision-area .session p{
+    color: #fff;
+    font-size: 1em;
+    
+}
+.vision-area .session a{
+    background-color: #1277d9;
+    color: #fff;
+    border: 2px solid transparent;
+    padding: 10px 20px;
+    border-radius: 117px;
+    text-decoration: none;
+    margin-top: 15px;
+    display: inline-block;
+}
+.vision-area .session a:hover{
+    background-color: #326295;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 117px;
+    text-decoration: none;
+    display: inline-block;
+} 
+
+
+/* blog area */
+
+.blog-area{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 30px;
+}
+.blog {
+    margin-right: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+}
+.blog img{
+    width: 300px;
+}
+
+/* footer area css */
+.footer-area{
+    text-align: center;
+    margin-top: 50px;
+}
+.footer-area .footer-logo img{
+    width: 300px;
+}
+.footer-area .social-link ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  
+}
+.footer-area .social-link ul li{
+    margin-right:20px;
+}
+.footer-area .social-link i{
+    background-color: #E7E7E8;
+    color:#969BAB;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50%;
+}
+.footer-copyright-area p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* Responsive media qurey for mobile resulation 350px to 668 px */
+@media  screen and (max-width:668px){
+    .header-area{
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+    }
+    .header-area h2{
+        font-size: 40px;
+        text-align: center;
+    }
+    .main-menu{
+        display: block;
+        padding: 0 50px;
+        margin-bottom: 20px;
+    }
+    .live-watch-wraper{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding-left: 20px;
+        text-align: center;
+    }
+    .live-watch-wraper {
+       text-align: center;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 5px;
+        padding: 0 50px;
+    }
+    .players-bio .player-profile-photo img{
+        width:100%;
+     }
+    .highlights-streaming-area{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 100px 0;
+    }
+    .highlight-vedio{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .session{
+        text-align: center;
+    }
+    .blog{
+        padding: 0 50px;
+        margin-bottom:10px
+    }
+    .blog img{
+        width: 100%;
+    }
+    .blog-area{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+@media  screen and (max-width:480px){
+    .header-area{
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+    }
+    .header-area h2{
+        font-size: 30px;
+        text-align: center;
+    }
+    .main-menu{
+        display: none;
+    }
+    .live-watch-wraper{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding-left: 20px;
+        text-align: center;
+    }
+    .live-watch-wraper {
+       text-align: center;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 10px;
+        padding: 0 30px;
+    }
+    .players-bio .player-profile-photo img{
+        width:100%;
+     }
+    .highlights-streaming-area{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 100px 0;
+    }
+    .highlight-vedio{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .session{
+        text-align: center;
+    }
+    .blog-area{
+        display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-top: 30px;
+    text-align: center;
+    }
+}
