@@ -1,5 +1,19 @@
+/***
+ * Start  Full  Responsive Design
+ * Designer Name: Rahath Ahmed (Programing Hero)
+ * Mail: Rahathpersonal@gmail.com
+ * Design Name: Football Responsive Website
+ * Design Name: Football Responsive Website
+ * Responsive: YES
+ * Language: HTML5 & CSS3
+ * Framework: NO
+***/
+
+        /* google font link */
+        /* font-family: 'Poppins', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
-/* font-family: 'Poppins', sans-serif; */
+
+    /* default css */
 body{
     margin: 0;
     padding: 0;
@@ -9,7 +23,10 @@ body{
     width: 960px;
     padding: 50px 0;
 }
-    /* header area */
+    /*-----------------------------------
+        -HEADER- Area CSS Style START
+ ----------------------------*/
+
 .header-area{
     background-color: #2D25A0;
     display: flex;
@@ -68,8 +85,13 @@ body{
     font-size: 16px;
 }
 
+  /*-----------------
+        -HEADER- Area CSS Style END
+ ------------------*/
 
-/* player bio css */
+
+
+    /* player bio css style start */
 main{
     display: flex;
     justify-content: center;
@@ -93,8 +115,10 @@ main{
 .players-bio .player-bio-data{
     font-size: 13px;
 }
+        /* player bio css style end */
 
-/* highlights-streaming-area */
+
+        /* highlights-streaming-area start  */
 .highlights-streaming-area{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -131,8 +155,9 @@ main{
     width: 500px;
     border-radius: 10px;
 }
-
-/* vision area extra */
+     /* highlight streaming area end */
+        
+     /* vision area start */
 .vision-area{
     display: flex;
     justify-content: center;
@@ -169,9 +194,9 @@ main{
     text-decoration: none;
     display: inline-block;
 } 
+ /* vision area end */
 
-
-/* blog area */
+/* blog area  start */
 
 .blog-area{
     display: grid;
@@ -187,7 +212,12 @@ main{
     width: 300px;
 }
 
-/* footer area css */
+/* blog area  start */
+
+
+/*--------------------------------
+        Footer Area CSS Style Start
+ -------------------------*/
 .footer-area{
     text-align: center;
     margin-top: 50px;
@@ -217,8 +247,74 @@ main{
     font-weight: bold;
 }
 
+/*-----------------------------------------------------------
+Responsive media qurey for mobile and tab resulation 350px to 768px >
 
-/* Responsive media qurey for mobile resulation 350px to 668 px */
+    --Perfectly Working 360px Resulation Device >
+    --Perfectly Working 646px Resulation Device >
+    --Perfectly Working 768px Resulation Device and Above >
+
+     [Cheak With Google Crome]
+-------------------------------------------------------------*/
+
+@media  screen and (max-width:768px){
+    .header-area{
+        width: 800px;
+        text-align: center;
+        overflow: hidden;
+    }
+    .header-area h2{
+        font-size: 30px;
+        text-align: center;
+    }
+    .main-menu{
+        display: block;
+    }
+    .live-watch-wraper{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding-left: 20px;
+        text-align: center;
+    }
+    .live-watch-wraper {
+       text-align: center;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 10px;
+       
+    }
+    .players-bio .player-profile-photo img{
+        width:100%;
+     }
+    .highlights-streaming-area{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 100px 0;
+    }
+    .highlight-vedio{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .highlight-vedio h2{
+        font-size: 30px;
+    }
+    .vision-area {
+        width: 400px;  
+    }
+    .session{
+        text-align: center;
+    }
+    .vision-area{
+        width: 100%;}
+    .blog-area{
+        display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-top: 30px;
+    text-align: center;
+    }
+}
 @media  screen and (max-width:668px){
     .header-area{
         width: 100%;
@@ -304,7 +400,7 @@ main{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         grid-gap: 10px;
-        padding: 0 30px;
+        padding: 0 50px;
     }
     .players-bio .player-profile-photo img{
         width:100%;
@@ -321,6 +417,66 @@ main{
     .session{
         text-align: center;
     }
+    .vision-area{
+        width: 100%;}
+    .blog-area{
+        display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-top: 30px;
+    text-align: center;
+    }
+}
+@media  screen and (max-width:360px){
+    .header-area{
+        width: 380px;
+        text-align: center;
+        overflow: hidden;
+    }
+    .header-area h2{
+        font-size: 30px;
+        text-align: center;
+    }
+    .main-menu{
+        display: none;
+    }
+    .live-watch-wraper{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding-left: 20px;
+        text-align: center;
+    }
+    .live-watch-wraper {
+       text-align: center;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 10px;
+        padding: 0 80px ;
+    }
+    .players-bio .player-profile-photo img{
+        width:100%;
+     }
+    .highlights-streaming-area{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 100px 0;
+    }
+    .highlight-vedio{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .highlight-vedio h2{
+        font-size: 30px;
+    }
+    .vision-area {
+        width: 400px;  
+    }
+    .session{
+        text-align: center;
+    }
+    .vision-area{
+        width: 100%;}
     .blog-area{
         display: grid;
     grid-template-columns: repeat(1,1fr);
