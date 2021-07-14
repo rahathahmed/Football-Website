@@ -31,6 +31,7 @@ body{
     background-color: #2D25A0;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 /* menu */
 .main-menu {
@@ -211,6 +212,14 @@ main{
 .blog img{
     width: 300px;
 }
+.blog p a{
+    background-color:#1277d9;
+    padding: 5px;
+    border-radius: 15px;
+    color: #fff;
+    text-decoration: none;
+
+}
 
 /* blog area  start */
 
@@ -256,7 +265,7 @@ Responsive media qurey for mobile and tab resulation 350px to 768px >
 
      [Cheak With Google Crome]
 -------------------------------------------------------------*/
-
+/* 
 @media  screen and (max-width:768px){
     .header-area{
         width: 800px;
@@ -317,7 +326,7 @@ Responsive media qurey for mobile and tab resulation 350px to 768px >
 }
 @media  screen and (max-width:668px){
     .header-area{
-        width: 100%;
+        width: 666px;
         text-align: center;
         overflow: hidden;
     }
@@ -326,7 +335,7 @@ Responsive media qurey for mobile and tab resulation 350px to 768px >
         text-align: center;
     }
     .main-menu{
-        display: block;
+        display: none;
         padding: 0 50px;
         margin-bottom: 20px;
     }
@@ -374,18 +383,20 @@ Responsive media qurey for mobile and tab resulation 350px to 768px >
         text-align: center;
     }
 }
-@media  screen and (max-width:480px){
+@media  screen and (max-width:450px){
     .header-area{
         width: 100%;
         text-align: center;
         overflow: hidden;
     }
     .header-area h2{
-        font-size: 30px;
+        font-size: 40px;
         text-align: center;
     }
     .main-menu{
         display: none;
+        padding: 0 50px;
+        margin-bottom: 20px;
     }
     .live-watch-wraper{
         display: grid;
@@ -398,8 +409,8 @@ Responsive media qurey for mobile and tab resulation 350px to 768px >
     }
     .players{
         display: grid;
-        grid-template-columns: repeat(1,1fr);
-        grid-gap: 10px;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 5px;
         padding: 0 50px;
     }
     .players-bio .player-profile-photo img{
@@ -417,70 +428,131 @@ Responsive media qurey for mobile and tab resulation 350px to 768px >
     .session{
         text-align: center;
     }
-    .vision-area{
-        width: 100%;}
+    .blog{
+        padding: 0 50px;
+        margin-bottom:10px
+    }
+    .blog img{
+        width: 100%;
+    }
     .blog-area{
         display: grid;
-    grid-template-columns: repeat(1,1fr);
-    margin-top: 30px;
-    text-align: center;
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 30px;
+        text-align: center;
     }
-}
-@media  screen and (max-width:360px){
+} */
+/* @media (max-width:666px){
     .header-area{
-        width: 380px;
-        text-align: center;
-        overflow: hidden;
+        width: 666px;
+        padding: 0 20px;
     }
-    .header-area h2{
-        font-size: 30px;
-        text-align: center;
-    }
-    .main-menu{
+    .main-menu {
         display: none;
-    }
+      
+    }  
     .live-watch-wraper{
         display: grid;
-        grid-template-columns: repeat(1,1fr);
-        padding-left: 20px;
-        text-align: center;
-    }
-    .live-watch-wraper {
-       text-align: center;
+        grid-template-columns: repeat(1,666px);
     }
     .players{
         display: grid;
-        grid-template-columns: repeat(1,1fr);
-        grid-gap: 10px;
-        padding: 0 80px ;
+        grid-template-columns: repeat(1,320px);
+        grid-gap: 20px;
+        justify-content: center;
     }
-    .players-bio .player-profile-photo img{
-        width:100%;
-     }
+    .player-profile-photo img{
+       width: 100%;
+    }
     .highlights-streaming-area{
         display: grid;
-        grid-template-columns: repeat(1,1fr);
-        padding: 100px 0;
+        grid-template-columns: repeat(1,1fr);   
     }
     .highlight-vedio{
         text-align: center;
         margin-bottom: 10px;
     }
-    .highlight-vedio h2{
-        font-size: 30px;
-    }
-    .vision-area {
-        width: 400px;  
-    }
-    .session{
-        text-align: center;
-    }
     .vision-area{
-        width: 100%;}
+        text-align: center;
+        width: 700px;
+    }
     .blog-area{
         display: grid;
-    grid-template-columns: repeat(1,1fr);
-    margin-top: 30px;
-    text-align: center;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 30px;
+    }
+    .footer-area{
+        text-align: center;
     }
 }
+
+/* @media all (max-width:420px){
+    .header-area{
+        width: 420px;
+        padding: 0 20px;
+    }
+    .main-menu {
+        display: flex;
+        justify-content: space-between;
+    }   
+} */
+     /* */ 
+
+     @media (max-width:688px){
+         .container{
+             width: 100%;
+         }
+         /* menu */
+        .main-menu {
+             display: none;
+            
+            }   
+        .banner-area{
+           width: 100%;
+        }
+        .banner-area img{
+            width: 100%;
+         }
+        .live-watch-wraper{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+        }
+        .players{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+        }
+        .flex{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .players-bio {
+            width: 300px;
+        }
+        .players-bio img{
+            width: 100%;
+        }
+        .highlights-streaming-area{
+           display: grid;
+           grid-template-columns: repeat(1,400px);
+        }
+        .highlight-vedio{
+            margin-bottom: 20px;
+        }
+        .vision-area{
+            display: none;
+        }
+        .blog-area{
+            display: grid;
+            grid-template-columns: repeat(1,400px);
+        }
+        .blog-area img{
+            width: 100%;
+        }
+        .footer-log{
+            display: block;
+        }
+        .social-link{
+            display: none;
+        }
+     }
